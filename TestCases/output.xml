@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.11 on win32)" generated="20230709 13:45:23.190" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="C:\Users\Narine_Sirunyan\PycharmProjects\Automation_Robot\TestCases\Test1.robot">
+<test id="s1-t1" name="TestCase001" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230709 13:45:23.417" level="INFO">Opening browser 'Chrome' to base url 'http://www.saucedemo.com'.</msg>
+<msg timestamp="20230709 13:45:23.444" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230709 13:45:23.444" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230709 13:45:23.417" endtime="20230709 13:45:23.447"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='user-name']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230709 13:45:23.448" endtime="20230709 13:45:23.448"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230709 13:45:23.448" endtime="20230709 13:45:23.448"/>
+</kw>
+<status status="FAIL" starttime="20230709 13:45:23.416" endtime="20230709 13:45:23.448">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20230709 13:45:23.192" endtime="20230709 13:45:23.450"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
