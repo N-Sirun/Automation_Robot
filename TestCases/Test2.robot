@@ -1,10 +1,10 @@
 *** Settings ***
 Library   SeleniumLibrary
+Resource    ../Resources/Resource.robot
 
 *** Test Cases ***
 TestCase002
-    open browser     ${URL2}     ${browser}
-    maximize browser window
+    Open Browser and Maximize    ${URL2}    ${browser}
     select radio button    add_type    office
     sleep     3
     select checkbox    terms
@@ -13,5 +13,3 @@ TestCase002
 *** Variables ***
 ${URL2}    https://thetestingworld.com/testings/
 ${browser}   Chrome
-#${username}   standard_user
-#${password}   secret_sauce
