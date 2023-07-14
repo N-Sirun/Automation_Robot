@@ -1,8 +1,8 @@
 *** Settings ***
-Library   SeleniumLibrary
 Library    RequestsLibrary
 Library    RequestsLibrary
 Resource    ../Resources/Resource.robot
+Library    SeleniumLibrary
 
 *** Test Cases ***
 TestCase002
