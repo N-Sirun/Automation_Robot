@@ -13,7 +13,7 @@ Should be able to add new customer
     page should contain    Customers Are Priority One!
 
     #set window position    x=241    y=169
-    set selenium speed    .2
+    #set selenium speed    .2
     click link         Sign In
     page should contain  Login
 
@@ -29,7 +29,12 @@ Should be able to add new customer
     input text      id=FirstName        George
     input text      id=LastName         Mevis
     input text      id=City             Los-Angeles
-    dropdown
+    select from list by value    xpath://*[@id="StateOrRegion"]    HI
+    select radio button    gender    female
+    select checkbox    promos-name
+    click button      Submit
+    #page should contain    Success! New customer added
+    location should contain    customer-success
     sleep              3
     close browser
 
