@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Resources/Crm.robot
+Resource    ../Resources/Crm.resource
 
 *** Keywords ***
 
