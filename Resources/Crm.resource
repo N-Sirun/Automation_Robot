@@ -30,3 +30,11 @@ Filling In The Customer Info
     #page should contain    Success! New customer added
     location should contain    customer-success
     sleep              3
+
+Enter And Clear Term Into The Search Box
+    input text    xpath=/html/body/nav/input    friendly
+    clear element text    xpath=/html/body/nav/input
+
+Edit Customer Profile
+    click link    xpath=//*[@id="customers"]/tbody/tr[1]/td[5]/a[1]
+    location should contain    crm/user.html

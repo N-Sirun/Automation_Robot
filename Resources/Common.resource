@@ -6,7 +6,7 @@ Resource    ../Resources/Crm.resource
 
 Begin Web Test
     open browser     about:blank    Chrome
-Setting Selenium Speed
+Test Speed
     set selenium speed    .2
 Launch Homepage
     Go To              https://automationplayground.com/crm/
